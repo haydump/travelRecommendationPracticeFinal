@@ -70,13 +70,16 @@
             <input type="text" id="name" name="name" required>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-            <label for="condition">Condition</label>
-            <input type="text" id="condition" name="condition" required>
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit" onclick="thankyou()">Submit</button>
+          <button type="submit" onclick="onSubmitContact()">Submit</button>
         </form>
       </section>
+    </div>
+
+    <div class="popup" id="popup">
+      <h3>Thank you for contacting us!</h3>
+      <button onclick="showPopup(false)">Ok</button>
     </div>
   </div>
 

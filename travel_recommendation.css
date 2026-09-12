@@ -187,6 +187,48 @@ body {
   width: 100%;
 }
 
+.popup {
+  color: #000;
+  width:400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  /* padding: 30px; */
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+
 .main-title {
   text-transform: uppercase;
   margin-bottom: 10px;
