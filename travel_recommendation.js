@@ -15,17 +15,17 @@ function searchCondition(input) {
   fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
+      const validateNameAndDescription = (c) => {
+        return (
+          c.name.toLowerCase().includes(input)
+          || c.description.toLowerCase().includes(input)
+        );
+      };
       const results = [
-        ...data.countries.flatMap(item => item.cities),
-        ...data.temples,
-        ...data.beaches,
+        ...data.countries.flatMap(item => item.cities).filter((c) => (input === 'country' || validateNameAndDescription(c))),
+        ...data.temples.filter((c) => (validateNameAndDescription(c))),
+        ...data.beaches.filter((c) => (validateNameAndDescription(c))),
       ]
-        .filter((c) => {
-          return (
-            c.name.toLowerCase().includes(input)
-            || c.description.toLowerCase().includes(input)
-          )
-        });
 
       if (results.length > 0) {
         const html = results.map((ret) => (`
