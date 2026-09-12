@@ -23,8 +23,8 @@ function searchCondition(input) {
       };
       const results = [
         ...data.countries.flatMap(item => item.cities).filter((c) => (input === 'country' || validateNameAndDescription(c))),
-        ...data.temples.filter((c) => (validateNameAndDescription(c))),
-        ...data.beaches.filter((c) => (validateNameAndDescription(c))),
+        ...data.temples.filter((c) => (input === 'temple' || validateNameAndDescription(c))),
+        ...data.beaches.filter((c) => (input === 'beach' || validateNameAndDescription(c))),
       ]
 
       if (results.length > 0) {
