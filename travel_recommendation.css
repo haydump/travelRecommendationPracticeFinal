@@ -1,0 +1,251 @@
+/* Basic CSS for the navigation bar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+nav {
+  background-color: #182626;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 60px;
+}
+
+nav h1 {
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav .search-container {
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 5px 16px 5px 16px;
+}
+
+nav .search-container input {
+  height: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Basic CSS for the form elements */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(60deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  background-image: url('images/jeshoots-com-airport-2373727.jpg');
+  background-image: linear-gradient(60deg, #020024aa 0%, #090979aa 35%, #00d4ffaa 100%), url('images/jeshoots-com-airport-2373727.jpg');
+  background-size: cover;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.actions {
+  min-height: 100%;
+  width: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actions svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.content {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.content section {
+  /* margin-bottom: 80px; */
+  align-self: stretch;
+  margin-right: 60px;
+}
+
+.content .section-description {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.btn-description {
+  padding: 14px 30px;
+  text-transform: uppercase;
+}
+
+.content .section-team {
+  justify-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content .section-team .team-all-members {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: baseline;
+}
+
+.content .section-team .team-all-members .team-member {
+  text-align: center;
+  margin: 20px;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.content .section-team .team-all-members .team-member img {
+  height: 35px;
+  margin: 4px;
+}
+
+.content .section-locations .locations-all {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.content .section-contact {
+  justify-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content .section-contact .main-title {
+  flex: 1;
+}
+
+.content .section-contact #contactForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#contactForm input,
+#contactForm textarea {
+  /* width: 400px; */
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+#contactForm button {
+  width: 100%;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 7px 15px;
+  background: #2e94ad;
+  /* background-color: #4CAF50; */
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #298399;
+  /* background-color: #45a049; */
+}
+
+/* Basic CSS for the report section */
+h2 {
+  margin-top: 30px;
+}
+
+#report,
+#result {
+  padding: 10px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+#result {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#result img {
+  width: 200px;
+  height: 100px;
+}
