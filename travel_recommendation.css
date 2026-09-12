@@ -120,6 +120,36 @@ body {
   text-transform: uppercase;
 }
 
+.content .section-result {
+  justify-self: stretch;
+  display: none;
+}
+
+.content .section-result #result {
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr;
+  grid-gap: 10px; 
+  align-items: baseline;
+}
+
+.content .section-result #result .result-location {
+  width: 340px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.content .section-result #result .result-location img {
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+  margin: 4px;
+}
+
+
 .content .section-team {
   justify-self: stretch;
   display: flex;
@@ -269,25 +299,4 @@ button:hover {
 /* Basic CSS for the report section */
 h2 {
   margin-top: 30px;
-}
-
-#report,
-#result {
-  padding: 10px;
-  max-width: 400px;
-  word-wrap: break-word;
-}
-
-#result {
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-#result img {
-  width: 200px;
-  height: 100px;
 }
